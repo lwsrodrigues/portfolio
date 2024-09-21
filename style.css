@@ -1,0 +1,245 @@
+body {
+    background-color: #192533;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    padding: 10px;
+    background-color: #1a1f2e;
+    color: #519efc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;/* Centraliza os links horizontalmente */
+    gap: 10px; /* Reduz o espaço entre os links */
+}
+
+.links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px; /* Diminui o tamanho do padding para links menores */
+    background-color: #3b8cd4; /* Cor de fundo menos brilhante */
+    border-radius: 4px; /* Diminui o arredondamento */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Reduz a duração da transição */
+    font-size: 0.9rem; /* Diminui o tamanho da fonte */
+}
+
+.links a:hover {
+    background-color: #2b7bb3; /* Cor de fundo ainda mais escura no hover */
+    color: #e0e0e0; /* Mantém a cor do texto no hover */
+}
+
+.span-1 {
+    font-weight: bold;
+    font-size: x-large;
+    color: #519efc;
+}
+
+.secao-1 {
+    width: 500px;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.secao-2 {
+    width: 500px;
+    margin-top: 50px;
+}
+.img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; /* Garante que o contêiner seja circular */
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%) scale(1.1); /* Centraliza e ajusta o tamanho da imagem */
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translate(-50%, -50%) scale(1.1); /* Início da levitação */
+    }
+    100% {
+        transform: translate(-50%, -60%) scale(1.1); /* Levita para cima */
+    }
+}
+
+.secao-3 {
+    color: #fff;
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.bg-dark {
+    background-color: #1a1f2e !important;
+}
+
+.text-light {
+    color: #e0e0e0 !important;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.card {
+    background-color: #292f45;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #344065;
+    transform: translateY(-10px);
+}
+
+.card-title {
+    color: #3be1ed;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    color: #b3b3b3;
+}
+
+.btn-info {
+    background-color: #519efc;
+    color: #192533;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #3be1ed;
+    color: #192533;
+}
+
+.service-box {
+    border: 1px solid #519efc;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 20px;
+}
+
+.service-box:hover {
+    background-color: #519efc;
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    color: #e0e0e0;
+}
+
+.form-control {
+    background-color: #292f45;
+    border: 1px solid #519efc;
+    color: #e0e0e0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #3be1ed;
+}
+
+.footer {
+    background-color: #1a1f2e;
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Certificates Section */
+#certificates {
+    background-color: #192533;
+    color: #e0e0e0;
+}
+
+#certificates .card {
+    background-color: #292f45;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#certificates .card:hover {
+    background-color: #344065;
+    transform: translateY(-10px);
+}
+
+#certificates .card-title {
+    color: #3be1ed;
+    font-size: 1.5rem;
+}
+
+#certificates .card-text {
+    color: #b3b3b3;
+}
+
+#certificates .btn-info {
+    background-color: #519efc;
+    color: #192533;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#certificates .btn-info:hover {
+    background-color: #3be1ed;
+    color: #192533;
+}
+/* Centralizar o título "Skills" */
+#skills .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Ajustar o tamanho dos cards */
+#skills .card {
+    max-width: 250px;
+    margin: 0 auto; /* Centraliza cada card */
+    padding: 15px;
+}
+
+#skills .card:hover {
+    transform: translateY(-8px);
+}
+
+/* Mantendo o estilo do hover e a transição suave */
+#skills .card-title {
+    font-size: 1.25rem;
+    color: #3be1ed;
+}
+
+#skills .card-text {
+    font-size: 0.9rem;
+}
