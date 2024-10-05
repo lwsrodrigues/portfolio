@@ -15,7 +15,7 @@ body {
 
 .links {
     display: flex;
-    justify-content: flex-end;/* Centraliza os links horizontalmente */
+    justify-content: flex-end; /* Centraliza os links horizontalmente */
     gap: 10px; /* Reduz o espaço entre os links */
 }
 
@@ -52,6 +52,7 @@ body {
     width: 500px;
     margin-top: 50px;
 }
+
 .img {
     width: 300px;
     height: 300px;
@@ -113,7 +114,7 @@ body {
 
 .card:hover {
     background-color: #344065;
-    transform: translateY(-10px);
+    transform: translateY(-12px); /* Aumenta a elevação no hover */
 }
 
 .card-title {
@@ -175,47 +176,34 @@ body {
     padding: 20px 0;
     text-align: center;
 }
-/* Certificates Section */
-#certificates {
-    background-color: #192533;
-    color: #e0e0e0;
-}
 
+/* Reduzindo o tamanho dos cards e ajustando o layout */
 #certificates .card {
-    background-color: #292f45;
-    border: none;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    max-width: 250px; /* Ajuste o valor conforme necessário */
+    padding: 15px;
+    margin: 10px;
 }
 
-#certificates .card:hover {
-    background-color: #344065;
-    transform: translateY(-10px);
+#certificates .card-img-top {
+    max-height: 150px; /* Ajuste o valor conforme necessário */
+    object-fit: cover; /* Mantém a proporção da imagem e preenche o container */
 }
 
 #certificates .card-title {
-    color: #3be1ed;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #certificates .card-text {
-    color: #b3b3b3;
+    font-size: 0.9rem;
 }
 
-#certificates .btn-info {
-    background-color: #519efc;
-    color: #192533;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+/* Utilizando Flexbox para organizar os cards */
+#certificates .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards horizontalmente */
 }
 
-#certificates .btn-info:hover {
-    background-color: #3be1ed;
-    color: #192533;
-}
 /* Centralizar o título "Skills" */
 #skills .section-title {
     text-align: center;
@@ -225,9 +213,11 @@ body {
 
 /* Ajustar o tamanho dos cards */
 #skills .card {
-    max-width: 250px;
+    max-width: 200px; /* Diminua ainda mais o valor aqui */
+    width: 100%; /* Garantir que ocupe a largura máxima permitida */
     margin: 0 auto; /* Centraliza cada card */
-    padding: 15px;
+    padding: 15px; /* Diminui o padding para ajustar o tamanho */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura total */
 }
 
 #skills .card:hover {

@@ -10,6 +10,7 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="header">
@@ -30,13 +31,23 @@
             <div class="row">
                 <div class="col">
                     <section class="secao-1">
-                        <h3>Hello</h3>
-                        <h1>WELCOME,</h1>
-                        <h1>I'm Lucas Rodrigues,</h1>
-                        <h1><span class="developer">Web Developer</span></h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis officiis, laudantium vel nihil dolores ipsa quas eius aliquam libero totam repellendus reiciendis rem suscipit aut repellat accusamus adipisci harum pariatur.</p>
-                        <a href="#about" class="btn btn-info link-a-1">Learn more</a>
-                        <a href="#projects" class="btn btn-info link-a-2">Browse</a>
+                        <h3>Olá</h3>
+                        <h1>Sou Lucas Rodrigues,</h1>
+                        <h1><span class="developer">Software Developer</span></h1>
+                        <p>Sou um profissional apaixonado por tecnologia e programação, tenho conhecimento em linguaagens como Java, Python, C, Php, JavaScript, 
+                            além de experiência em bancos de dados MySQL, APIs, Frameworks. Sou dedicado, criativo e sempre buscando aprender novas tecnologias para melhorar minhas habilidades. 
+                            Estou comprometido em entregar soluções de alta qualidade e atender às necessidades dos clientes. Meu objetivo é crescer profissionalmente em um ambiente dinâmico e colaborativo, sempre buscando inovações e aprimoramento contínuo.</p>
+                        <a href="https://github.com/lwsrodrigues" target="_blank" class="btn btn-info link-a-1">
+                        <i class="fab fa-github fa-2x"></i> 
+                    </a>
+                      <a href="https://www.linkedin.com/in/lucasrodriguees" target="_blank" class="btn btn-info link-a-2">
+                        <i class="fab fa-linkedin fa-2x"></i> 
+                      </a>
+                      <a href="https://www.linkedin.com/in/lucasrodriguees" target="_blank" class="btn btn-info link-a-2">
+                        <i class="fab fa-whatsapp fa-2x"></i> 
+                      </a>
+                      
+
                     </section>
                 </div>
                 <div class="col">
@@ -52,16 +63,23 @@
         <!-- Projects Section -->
         <section id="projects" class="bg-dark text-light py-5">
             <div class="container">
-                <h2 class="text-center mb-4">Projects</h2>
+                <h2 class="text-center mb-4">Projetos</h2>
                 <div class="row">
                     <!-- Project 1 -->
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="img/projeto1.jpg" class="card-img-top" alt="Project 1">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe  width="375" height="260" class="embed-responsive-item" src="https://www.youtube.com/embed/XbdLE4IhCI8?si=SrVSQzZyAGi2gvjw"   
+                       title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"   
+                       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+                      
+                          </div>
                             <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">Brief description of project 1.</p>
-                                <a href="#" class="btn btn-info">View Project</a>
+                                <h5 class="card-title">Medidor de Temperatura e Umidade</h5>
+                                <p class="card-text">Desenvolvi um medidor de temperatura e umidade utilizando um sensor DHT22 e um microcontrolador ESP32, projetado para monitorar as condições ambientais em tempo real e enviar os dados para a plataforma ThingSpeak via protocolo MQTT. O sistema se conecta a uma rede Wi-Fi, permitindo a transmissão contínua dos dados, que são lidos a cada 2 segundos e publicados em um canal específico do ThingSpeak. As medições precisas de temperatura e umidade são exibidas no console serial, possibilitando o acompanhamento imediato das condições ambientais. Além disso, implementei funcionalidades que garantem a reconexão automática ao MQTT em caso de falhas, assegurando a continuidade da transmissão. Este projeto não só oferece uma solução eficaz para monitorar o ambiente, mas também me proporcionou uma experiência prática em Internet das Coisas (IoT) e integração de hardware e software. </p>
+                                <a href="https://wokwi.com/projects/409644229957134337" class="btn btn-info" target="_blank" onclick="openProject('https://wokwi.com/projects/409644229957134337')">Wokwi</a>
+                                <a href="https://thingspeak.com/channels/2664977" class="btn btn-info" target="_blank" onclick="openProject('https://thingspeak.com/channels/2664977')">ThingSpeak</a>  
+
                             </div>
                         </div>
                     </div>
@@ -73,9 +91,9 @@
             Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Brief description of project 2.</p>
-            <a href="#" class="btn btn-info">View Project</a>
+            <h5 class="card-title">Sistema de Passágens Aereas</h5>
+            <p class="card-text">mbarquei em um projeto desafiador para aprimorar meus conhecimentos em Java . Desenvolvi um sistema de reservas de passagens aéreas com a biblioteca Swing para a interface gráfica e manipulação de dados. Este projeto envolveu o uso de conceitos de Programação Orientada a Objetos (POO), como a criação de classes e métodos, além de bibliotecas essenciais para o desenvolvimento. Implementando funcionalidades como cadastro e edição de poltronas, reserva de assentos, visualização de poltronas disponíveis e reservadas, e uma contagem regressiva para finalizar o programa, pude aprofundar meu entendimento sobre estruturas de controle, arrays multidimensionais e manipulação de eventos. Utilizei JOptionPane para diálogos interativos e threads e timers para funcionalidades assíncronas. Estou animado para aplicar e expandir esses conhecimentos em projetos futuros, buscando sempre inovar e entregar soluções de alta qualidade.</p>
+            <a href="#" class="btn btn-info">Ver Código do Projeto</a>
         </div>
     </div>
 </div>
@@ -102,83 +120,82 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="service-box text-center p-4">
-                            <h4>Web Development</h4>
+                            <h4>Developer Mobile</h4>
                             <p>Building responsive and modern websites.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service-box text-center p-4">
-                            <h4>Mobile Development</h4>
+                            <h4>Front-end</h4>
                             <p>Creating mobile apps with a focus on usability.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service-box text-center p-4">
-                            <h4>UI/UX Design</h4>
+                            <h4>Back-end</h4>
                             <p>Designing user-friendly and attractive interfaces.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="skills" class="bg-dark py-5">
+        <section class="skills-section py-5">
             <div class="container">
                 <h2 class="mb-4">Skills</h2>
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="card text-center service-box">
                             <div class="card-body">
-                                <h5 class="card-title">HTML/CSS</h5>
+                                <h5 class="card-title"><i class="fab fa-html5"></i> HTML/CSS</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="card text-center service-box">
                             <div class="card-body">
-                                <h5 class="card-title">JavaScript</h5>
+                                <h5 class="card-title"><i class="fab fa-js"></i> JavaScript</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="card text-center service-box">
                             <div class="card-body">
-                                <h5 class="card-title">Java</h5>
+                                <h5 class="card-title"><i class="fab fa-java"></i> Java</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="card text-center service-box">
                             <div class="card-body">
-                                <h5 class="card-title">Spring Boot</h5>
+                                <h5 class="card-title"><i class="fas fa-leaf"></i> Spring Boot</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="card text-center service-box">
                             <div class="card-body">
-                                <h5 class="card-title">MySQL</h5>
+                                <h5 class="card-title"><i class="fas fa-database"></i> MySQL</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="card text-center service-box">
                             <div class="card-body">
-                                <h5 class="card-title">GitHub</h5>
+                                <h5 class="card-title"><i class="fab fa-github"></i> GitHub</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="card text-center service-box">
                             <div class="card-body">
-                                <h5 class="card-title">Docker</h5>
+                                <h5 class="card-title"><i class="fab fa-docker"></i> Docker</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="card text-center service-box">
                             <div class="card-body">
-                                <h5 class="card-title">Kubernetes</h5>
+                                <h5 class="card-title"><i class="fab fa-kubernetes"></i> Kubernetes</h5>
                             </div>
                         </div>
                     </div>
@@ -186,14 +203,15 @@
             </div>
         </section>
         
+        
         <!-- Certificates Section -->
 <section id="certificates" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-4">Certificates</h2>
+        <h2 class="text-center mb-3">Certificates</h2>
         <div class="row">
             <!-- Certificate 1 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
+            <div class="col-md-3">
+                <div class="card mb-3">
                     <img src="img/GitGithub.jpg" class="card-img-top" alt="Certificate 1">
                     <div class="card-body">
                         <h5 class="card-title">Certificate 1</h5>
@@ -203,8 +221,8 @@
                 </div>
             </div>
             <!-- Certificate 2 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
+            <div class="col-md-3">
+                <div class="card mb-3">
                     <img src="img/IA.jpg" class="card-img-top" alt="Certificate 2">
                     <div class="card-body">
                         <h5 class="card-title">Certificate 2</h5>
@@ -214,8 +232,43 @@
                 </div>
             </div>
             <!-- Certificate 3 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="img/CDL.jpg" class="card-img-top" alt="Certificate 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate 3</h5>
+                        <p class="card-text">Brief description of Certificate 3.</p>
+                        <a href="#" class="btn btn-info">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Certificate 1 -->
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="img/GitGithub.jpg" class="card-img-top" alt="Certificate 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate 1</h5>
+                        <p class="card-text">Brief description of Certificate 1.</p>
+                        <a href="#" class="btn btn-info">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate 2 -->
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="img/IA.jpg" class="card-img-top" alt="Certificate 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate 2</h5>
+                        <p class="card-text">Brief description of Certificate 2.</p>
+                        <a href="#" class="btn btn-info">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate 3 -->
+            <div class="col-md-3">
+                <div class="card mb-3">
                     <img src="img/CDL.jpg" class="card-img-top" alt="Certificate 3">
                     <div class="card-body">
                         <h5 class="card-title">Certificate 3</h5>
@@ -227,7 +280,20 @@
         </div>
     </div>
 </section>
-
+<!-- Modal -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel">Project</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe id="projectFrame" src="" width="100%" height="500px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- About Section -->
         <section id="about" class="py-5">
