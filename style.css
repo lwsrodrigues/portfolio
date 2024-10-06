@@ -185,7 +185,8 @@ body {
 }
 
 #certificates .card-img-top {
-    max-height: 150px; /* Ajuste o valor conforme necessário */
+    width: 100%;
+    max-height: 250px; /* Ajuste o valor conforme necessário */
     object-fit: cover; /* Mantém a proporção da imagem e preenche o container */
 }
 
@@ -213,7 +214,7 @@ body {
 
 /* Ajustar o tamanho dos cards */
 #skills .card {
-    max-width: 200px; /* Diminua ainda mais o valor aqui */
+    max-width: 500px; /* Diminua ainda mais o valor aqui */
     width: 100%; /* Garantir que ocupe a largura máxima permitida */
     margin: 0 auto; /* Centraliza cada card */
     padding: 15px; /* Diminui o padding para ajustar o tamanho */
@@ -233,3 +234,4 @@ body {
 #skills .card-text {
     font-size: 0.9rem;
 }
+
