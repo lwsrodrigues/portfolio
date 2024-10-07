@@ -12,7 +12,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .links {
     display: flex;
     justify-content: flex-end; /* Centraliza os links horizontalmente */
@@ -26,14 +25,17 @@ body {
     padding: 6px 12px; /* Diminui o tamanho do padding para links menores */
     background-color: #3b8cd4; /* Cor de fundo menos brilhante */
     border-radius: 4px; /* Diminui o arredondamento */
-    transition: background-color 0.2s ease, color 0.2s ease; /* Reduz a duração da transição */
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease; /* Reduz a duração da transição e adiciona transição de sombra */
     font-size: 0.9rem; /* Diminui o tamanho da fonte */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ao redor dos links */
 }
 
 .links a:hover {
-    background-color: #2b7bb3; /* Cor de fundo ainda mais escura no hover */
+    background-color: #2b7bb3; /* Cor de fundo mais escura no hover */
     color: #e0e0e0; /* Mantém a cor do texto no hover */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* Sombra mais intensa no hover */
 }
+
 
 .span-1 {
     font-weight: bold;
@@ -46,7 +48,9 @@ body {
     color: #fff;
     margin-left: 30px;
     margin-top: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 
 .secao-2 {
     width: 500px;
@@ -60,6 +64,8 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 50%; /* Garante que o contêiner seja circular */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao redor da imagem */
+    border: 4px solid rgba(81, 158, 252, 0.6); /* Borda com efeito neon */
 }
 
 .img img {
@@ -93,6 +99,12 @@ body {
 
 .text-light {
     color: #e0e0e0 !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+    transition: text-shadow 0.3s ease-in-out; /* Animação suave para sombra */
+}
+
+.text-light:hover {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Aumenta o efeito de sombra ao passar o mouse */
 }
 
 .py-5 {
@@ -102,29 +114,34 @@ body {
 
 .mb-4 {
     margin-bottom: 1.5rem !important;
+    text-align: center; /* Centraliza o texto */
 }
+
 
 .card {
     background-color: #292f45;
     border: none;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Inclui a transição da sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
 }
-
 .card:hover {
-    background-color: #344065;
-    transform: translateY(-12px); /* Aumenta a elevação no hover */
+    transform: translateY(-5px); /* Move o card para cima ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Aumenta a sombra ao passar o mouse */
 }
 
 .card-title {
     color: #3be1ed;
     font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil para o título */
 }
 
 .card-text {
     color: #b3b3b3;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra mais leve para o texto */
 }
+
 
 .btn-info {
     background-color: #519efc;
@@ -132,19 +149,23 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição para box-shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra inicial do botão */
 }
 
+/* Efeito de sombra ao passar o mouse */
 .btn-info:hover {
-    background-color: #3be1ed;
-    color: #192533;
+    background-color: #3b8cd4; /* Cor de fundo ao passar o mouse */
+    color: #e0e0e0; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais intensa ao passar o mouse */
 }
 
 .service-box {
     border: 1px solid #519efc;
     border-radius: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Inclui a transição da sombra */
     padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
 }
 
 .service-box:hover {
@@ -176,17 +197,25 @@ body {
     padding: 20px 0;
     text-align: center;
 }
-
 /* Reduzindo o tamanho dos cards e ajustando o layout */
 #certificates .card {
-    max-width: 250px; /* Ajuste o valor conforme necessário */
-    padding: 15px;
+    max-width: 350px; /* Ajuste o valor conforme necessário */
+    padding: 10px;
     margin: 10px;
 }
 
+#certificates .row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões quebrem a linha quando necessário */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro (opcional) */
+}
+
+
+/* Ajustes na imagem */
 #certificates .card-img-top {
     width: 100%;
-    max-height: 250px; /* Ajuste o valor conforme necessário */
+    max-height: 300px; /* Aumente a altura máxima */
     object-fit: cover; /* Mantém a proporção da imagem e preenche o container */
 }
 
@@ -198,19 +227,20 @@ body {
     font-size: 0.9rem;
 }
 
-/* Utilizando Flexbox para organizar os cards */
-#certificates .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza os cards horizontalmente */
+/* Centralizar o título "Skills" com sombra */
+#skills .section-title {
+    text-align: center; /* Centraliza o título */
+    font-size: 2rem; /* Define o tamanho da fonte */
+    margin-bottom: 30px; /* Espaço abaixo do título */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Adiciona sombra ao texto */
 }
 
-/* Centralizar o título "Skills" */
-#skills .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
+/* Centralizar a seção de certificados */
+#certificates {
+    text-align: center; /* Centraliza o texto dentro da seção */
+    padding: 20px; /* Adiciona espaçamento em volta da seção */
 }
+
 
 /* Ajustar o tamanho dos cards */
 #skills .card {
@@ -233,5 +263,27 @@ body {
 
 #skills .card-text {
     font-size: 0.9rem;
+}
+
+.view-counter {
+    background-color: #007BFF; /* Cor de fundo da plaquinha */
+    border: 2px solid #007BFF; /* Borda da plaquinha */
+    border-radius: 10px; /* Arredondar os cantos */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra da plaquinha */
+    display: inline-block; /* Manter a plaquinha em uma linha */
+    font-family: Arial, sans-serif; /* Fonte */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    animation: fadeIn 0.5s; /* Animação ao aparecer */
+}
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
